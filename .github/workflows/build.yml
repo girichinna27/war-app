@@ -42,7 +42,7 @@ jobs:
         env:
           JFROG_USERNAME: ${{ secrets.JFROG_USERNAME }}
           JFROG_PASSWORD: ${{ secrets.JFROG_PASSWORD }}
-          JFROG_URL: "https://triald1s5gy.jfrog.io/artifactory"
+          JFROG_URL: "https://hanu14.jfrog.io/artifactory"
         run: |
           WAR_FILE=$(ls ${{ matrix.module }}/target/*.war | head -n 1)
           curl -u "$JFROG_USERNAME:$JFROG_PASSWORD" \
