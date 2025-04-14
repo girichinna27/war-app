@@ -14,7 +14,7 @@ jobs:
 
     strategy:
       matrix:
-        module: [war-service1, war-service2, war-service3]  # Define your multiple war-producing modules
+        module: [war-service1, war-service2]  # Define your multiple war-producing modules
 
     steps:
       - name: Checkout Repository
