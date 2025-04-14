@@ -47,4 +47,4 @@ jobs:
           WAR_FILE=$(ls ${{ matrix.module }}/target/*.war | head -n 1)
           curl -u "$JFROG_USERNAME:$JFROG_PASSWORD" \
                -T "$WAR_FILE" \
-               "$JFROG_URL/my-war-repo/${{ matrix.module }}/$(basename $WAR_FILE)"
+               "$JFROG_URL/ssd-war/${{ matrix.module }}/$(basename $WAR_FILE)"
